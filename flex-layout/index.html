@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .flex-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    /* 
+    flex-wrap: wrap; 使弹性布局的项在容器空间不足时自动换行，保证布局的灵活性和适应性。
+    gap: 10px; 确保弹性项之间有10像素的空隙，使布局看起来更整齐、美观。
+    */
+
+    .name {
+        flex: 1 0 140px;
+    }
+
+    .email {
+        flex: 1 0 100px;
+    }
+
+    .btn {
+        flex: 1 0 60px;
+    }
+
+    
+
+    /* flex: 1 0 140px; 是一个简写属性，
+        对应的是 flex-grow, flex-shrink 和 flex-basis 三个属性。
+        flex-grow: 1; 项目可以放大，占据容器中可用的额外空间。
+        flex-shrink: 0; 项目不会缩小，即使容器空间不足。
+        flex-basis: 140px; 项目初始尺寸为 140 像素。
+    */
+</style>
+
+<body>
+
+    <div class="flex-container">
+        <input class="name" />
+        <input class="email" />
+        <button class="btn"> Submit</button>
+    </div>
+</body>
+
+</html>
