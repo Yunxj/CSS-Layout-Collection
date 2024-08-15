@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常用的flex布局</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #f6f6f6;
+        }
+
+        .headTitle {
+            text-align: center;
+            color: #555;
+            font-size: 26px;
+            padding: 30px 0;
+        }
+
+        .layout {
+            width: 1400px;
+            min-height: 500px;
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 0 auto;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+
+        .layout .box {
+            width: 300px;
+            height: 200px;
+            background: #7c9fb0;
+            border-radius: 8px;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            margin-bottom: 40px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="headTitle">常用的flex布局</div>
+    <div class="layout">
+        <div class="box">box方块</div>
+        <div class="box">box方块</div>
+        <div class="box">box方块</div>
+        <div class="box">box方块</div>
+        <div class="box">box方块</div>
+        <div class="box">box方块</div>
+        <div class="box">box方块</div>
+        <div class="box">box方块</div>
+        <div class="box">box方块</div>
+        <div class="box">box方块</div>
+        <!-- 最后一行flex 没有平分，布局不好控制 -->
+    </div>
+</body>
+
+</html>
